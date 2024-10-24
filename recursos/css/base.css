@@ -1,0 +1,80 @@
+/* Importar fuente */
+
+/* html:
+- Familia tipográfica
+- Tamaño de fuente
+- Color de fuente
+*/
+
+/* body:
+- Quitar márgenes
+*/
+
+/*
+Desarrollo de las clases
+*/
+
+:root {
+    --clr-blanco:#fffF;
+    --clr-violeta-oscuro: #1b1b2a;
+    --clr-violeta-claro:  #2e2e4a;
+    --clr-fuente: #333
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.encabezado{
+    background-color: var(--clr-violeta-oscuro);
+    width: 100%;
+}
+
+.encabezado>nav{
+    background-color:var(--clr-violeta-claro);
+    padding: .5rem;
+    text-align: end;
+    max-width: 100%;
+}
+
+nav>a{
+    text-decoration: none;
+    color:var(--clr-blanco);
+   
+}
+
+.encabezado>a>img{
+    width: 200px;
+    padding: 10px;
+}
+
+.contenido>img{
+    height: 20%;
+    max-width: 100%;
+    
+}
+
+.contenido{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    min-height: 80vh;
+
+}
+.pie{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: var(--clr-violeta-oscuro);
+
+}
+.pie>ul{
+    list-style: none;
+    padding: 1rem;
+    color: var(--clr-blanco)
+}
